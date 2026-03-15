@@ -10,7 +10,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/YOUR_REPO/devops-sonarqube-microservice-demo.git'
+                git 'https://github.com/Pratap-Samal/devops-sonarqube-microservice-demo.git'
             }
         }
 
