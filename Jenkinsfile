@@ -9,10 +9,11 @@ pipeline {
     stages {
 
         stage('Clone') {
-            steps {
-                git 'https://github.com/Pratap-Samal/devops-sonarqube-microservice-demo.git'
-            }
-        }
+		    steps {
+		        git branch: 'main',
+		        url: 'https://github.com/Pratap-Samal/devops-sonarqube-microservice-demo.git'
+		    }
+		}
 
         stage('Build') {
             steps {
